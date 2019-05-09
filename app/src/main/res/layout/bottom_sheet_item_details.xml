@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="4dp"
+        >
+        <ImageView
+            android:id="@+id/iv_item_image"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:minHeight="100dp"
+            android:src="@drawable/food"
+            android:layout_weight="0.7"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.3"
+            android:layout_margin="5dp"
+            >
+            <TextView
+                android:id="@+id/tv_item_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Plain Rice"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="\u20B9 20"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                />
+            <TextView
+                android:id="@+id/tv_ingredients"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:lineSpacingExtra="4dp"
+                android:text="2 cups rice (preferably basmati) 3.5 cups water or stock (chicken or veg stock) 2 to 2 ½ tbsp Oil. ½ cup onion thinly sliced (or about 1 lmedium) 1 tbsp ginger garlic paste. ½ cup tomato chopped ( or about 1 large, deseeded) Handful mint (or pudina  coriander)"
+                android:textColor="@color/black"
+                />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_margin="5dp"
+                >
+                <Button
+                    android:id="@+id/btn_add"
+                    android:layout_width="80dp"
+                    android:layout_height="35dp"
+                    android:text="Add"
+                    android:visibility="visible"
+                    android:textColor="@color/white"
+                    android:background="@drawable/button_green"
+                    />
+                <LinearLayout
+                    android:id="@+id/ll_quantity"
+                    android:layout_width="100dp"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:minHeight="30dp"
+
+                        android:background="@drawable/cell_shape_gray"
+                        android:layout_height="35dp">
+                        <ImageView
+                            android:id="@+id/iv_remove"
+                            android:layout_width="0dp"
+                            android:layout_weight="0.3"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_minus"
+                            />
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.4"
+
+                            android:layout_height="match_parent">
+                            <TextView
+
+
+                                android:layout_width="match_parent"
+
+                                android:id="@+id/tv_qty"
+                                android:layout_height="match_parent"
+                                android:text="1"
+                                android:gravity="center"
+                                android:textColor="@color/black"
+                                android:padding="@dimen/padding_10"
+                                />
+                        </RelativeLayout>
+
+
+                        <ImageView
+                            android:id="@+id/iv_add"
+                            android:layout_width="0dp"
+                            android:layout_weight="0.3"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_add"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

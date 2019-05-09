@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_navigation">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:hint="search for food.."
+        android:textSize="14dp"
+        android:focusable="false"
+        android:editable="false"
+        android:focusableInTouchMode="true"
+        android:clickable="true"
+        android:layout_margin="15dp"
+        android:layout_marginBottom="10dp"
+        android:drawableLeft="@drawable/search"
+        android:drawablePadding="10dp"
+        android:padding="10dp"
+        android:background="@drawable/edittext_back"
+        android:layout_marginRight="10dp"
+        app:queryHint="search"
+        ></EditText>
+
+    <FrameLayout
+        android:id="@+id/content_main_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ItemListActivity">
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/rv_item_list"
+    android:layout_width="match_parent"
+    android:paddingBottom="60dp"
+    android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+<include
+    android:layout_alignParentBottom="true"
+    android:id="@+id/bottom_cart_view"
+    layout="@layout/bottom_sheet_cart_view"
+    android:layout_height="55dp"
+    android:layout_width="match_parent"></include>
+</RelativeLayout>
